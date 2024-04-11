@@ -1,4 +1,4 @@
-data "aws_ami" "Ubuntu" {
+data "aws_ami" "amazonlinux2" {
   most_recent = true
 
   filter {
@@ -8,6 +8,6 @@ data "aws_ami" "Ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ami-0b8b44ec9a8f90422"]
+    values = ["ami-0900fe555666598a2"]
   }
 }
