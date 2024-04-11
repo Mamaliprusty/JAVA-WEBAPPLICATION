@@ -8,6 +8,6 @@ data "aws_ami" "amazonlinux2" {
 
   filter {
     name   = "name"
-    values = ["ami-0900fe555666598a2"]
+    values = ["Amazon Linux 2 Kernel 5.10 AMI 2.0.20240329.0 x86_64 HVM gp2"]
   }
 }
