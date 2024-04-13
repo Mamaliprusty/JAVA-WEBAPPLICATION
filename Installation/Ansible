@@ -1,0 +1,29 @@
+ b) Setup password for the default user
+     sudo passwd ubuntu
+  c) Edit the ssh configuration file
+     sudo vim /etc/ssh/sshd_config
+     Search for "PasswordAuthentication" and change it from no to yes
+  d) Restart ssh
+     sudo service ssh restart
+     Repeat the above steps from a to d on Server2 managed node
+  e) Connect to Controller using git bash
+  f) Generate the ssh keys
+     ssh-keygen
+  g) Copy the ssh keys
+     ssh-copy-id ubuntu@private_ip_of_server1
+     Repeat step g with ipaddress of Server2
+
+4 Installing Ansible
+  a) Update the apt repository
+     sudo apt-get update
+  b) Install software-properties-common
+     sudo apt-get install -y software-properties-common
+  c) Add the latest version of Ansible to apt repository
+     sudo apt-add-repository ppa:ansible/ansible
+  d) Update the apt repository
+     sudo apt-get update
+  e) Install ansible
+     sudo apt-get install -y ansible
+
+5 To check the verision of ansible
+  ansible --version
