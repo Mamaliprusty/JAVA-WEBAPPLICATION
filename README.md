@@ -45,37 +45,12 @@ name of the docker image : roshnirp/javaapp
 
 write ansible playbook to install python file and docker container on the remote host .
 
-# playbook:
+#  selenium test
 
----
-- name: Setup of docker and pip for ansible-docker integrations
-  hosts: all
-  tasks:
-   - name: Install pip
-     apt:
-      name: python3-pip
-      state: present
-      update_cache: yes
-   - name: Download and install docker and also docker-py
-     shell: "{{item}}"
-     with_items:
-      - curl -fsSL https://get.docker.com -o get-docker.sh
-      - sh get-docker.sh
-      - pip3 install docker-py
-...
+after impliment the application in QA server using testcode we can run automation testing using jenkins pipeline and tested the code and impliment it.
 
 
----
-- name: Create container from the customised docker image
-  hosts: all
-  tasks:
-   - name: Create container
-     docker_container:
-      name: javaapp
-      image: roshnirp/javaapp
-      ports:
-       - 9090:8080
-...
+      
 
 
 
