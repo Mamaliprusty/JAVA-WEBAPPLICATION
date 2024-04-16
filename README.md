@@ -3,7 +3,7 @@ http://3.83.45.220:30008/testapp/
 
 # Description
 
-# BUILD WEBAPP
+# Build webapp
 
 Build web application using MAVEN to build java code in jenkins pipeline.
 Trigger the data fron github.
@@ -14,7 +14,7 @@ URL:https://github.com/Mamaliprusty/JAVA-WEBAPPLICATION.git
 
 maven clean package
 
-CREATE DOCKER IMAGE IN JENKINS SERVER
+# CREATE DOCKER IMAGE IN JENKINS SERVER
 
 Install docker in jenkins and create docker image to copy the war file from jenkins server to tomcat server
 
