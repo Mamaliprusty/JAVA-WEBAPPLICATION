@@ -49,6 +49,10 @@ write ansible playbook to install python file and docker container on the remote
 
 after impliment the application in QA server using testcode we can run automation testing using jenkins pipeline and tested the code and impliment it.
 
+# prod deployment using kubernets
+
+testing is completed then we will deployment the application in prod environment using kubernets.
+
 
       
 
