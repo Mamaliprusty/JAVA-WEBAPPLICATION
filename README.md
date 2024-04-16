@@ -18,5 +18,12 @@ CREATE DOCKER IMAGE IN JENKINS SERVER
 
 Install docker in jenkins and create docker image to copy the war file from jenkins server to tomcat server
 
+DOCKER FILE
+
+FROM tomee
+MAINTAINER kingstone
+
+COPY ./webapp/target/webapp.war /usr/local/tomee/webapps/testapp.war
+ 
 
 
