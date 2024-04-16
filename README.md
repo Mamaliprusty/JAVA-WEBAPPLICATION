@@ -14,7 +14,7 @@ URL:https://github.com/Mamaliprusty/JAVA-WEBAPPLICATION.git
 
 maven clean package
 
-# CREATE DOCKER IMAGE IN JENKINS SERVER
+# create docker image
 
 Install docker in jenkins and create docker image to copy the war file from jenkins server to tomcat server
 
