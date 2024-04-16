@@ -1,0 +1,17 @@
+vim javaapp-service.yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: java-app-service
+ labels:
+  author: kingstone
+spec:
+ type: NodePort
+ ports:
+  - targetPort: 8080
+    port: 8080
+    nodePort: 30008
+ selector:
+  type: java-app
+...
