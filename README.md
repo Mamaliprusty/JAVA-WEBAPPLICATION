@@ -10,6 +10,13 @@ Trigger the data fron github.
 URL:https://github.com/Mamaliprusty/JAVA-WEBAPPLICATION.git
 
 
-1 Create maven build
+ Create maven build
 
 maven clean package
+
+CREATE DOCKER IMAGE IN JENKINS SERVER
+
+Install docker in jenkins and create docker image to copy the war file from jenkins server to tomcat server
+
+
+
