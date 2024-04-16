@@ -8,5 +8,7 @@ BUILD WEBAPP
 Build web application using MAVEN to build java code in jenkins pipeline.
 Trigger the data fron github.
 URL:https://github.com/Mamaliprusty/JAVA-WEBAPPLICATION.git
-Create maven build.
+
+
+Create maven build
 maven clean package
