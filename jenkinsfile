@@ -18,37 +18,7 @@ pipeline
         
             }
         }
-         stage('Create_Docker_Image')
-        {
-            steps
-            {
-sh '''cat >dockerfile<<EOF
-FROM tomee
-MAINTAINER kingstone
-
-COPY webapp/target/webapp.war /usr/local/tomee/webapps/javaapp.war
-EOF
-
-'''
-            }
-        }
-         stage('Downlaod and execute the selenium scripts')
-        {
-            steps
-            {
-                git 'https://github.com/Mamaliprusty/FunctionalTesting.git'
-                sh 'java -jar /var/lib/jenkins/workspace/pipeline/testing.jar'
-            }
-        }
-         stage('Execute Kubernetes definition files to deploy into proservers')
-        {
-            steps
-            {
-                sh 'ssh ubuntu@172.31.23.215 kubectl apply -f java-app-deployment.yml'
-                sh 'ssh ubuntu@172.31.23.215 kubectl apply -f javaapp-service.yml'
-            }
-        }
-
+    
     }
 }
 
